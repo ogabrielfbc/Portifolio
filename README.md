@@ -7,7 +7,7 @@ Este repositório contém meu portfólio pessoal, desenvolvido para apresentar m
 
 ## Sobre o projeto
 
-O portfólio foi desenvolvido com foco em apresentar minhas habilidades e projetos de forma organizada, moderna e responsiva.
+O portfólio foi desenvolvido para apresentar minhas habilidades e projetos de forma organizada, moderna e responsiva.
 
 ## Tecnologias utilizadas
 =======
@@ -81,12 +81,13 @@ Altere `SENHA_ADMIN` em `admin.js` antes de apresentar o trabalho. Como a senha 
 ## Projetos apresentados
 
 - **NEXUS TECH:** projeto de e-commerce.
-- **GymTracker:** projeto voltado ao acompanhamento de treinos.
+- **GymTracker:** projeto de acompanhamento de treinos.
 - **AtacaTudo:** sistema de gerenciamento de estoque.
 - **Sistema de Reservas:** aplicação para gerenciamento de reservas de laboratórios.
 
 ## Acesse meu portfólio
 
+<<<<<<< HEAD
 [Visualizar portfólio](https://ogabrielfbc.github.io/Port
 =======
 - Bootstrap 5
@@ -114,3 +115,14 @@ portfolio-gabriel/
 
 Explique que a versão entregue demonstra armazenamento local e gerenciamento CRUD no navegador. Para centralizar mensagens de diferentes visitantes e administrar dados reais com segurança, seria necessário um backend ou serviço externo. Não apresente o LocalStorage como banco de dados compartilhado.
 >>>>>>> da61f07 (Corrige estrutura do portfolio)
+=======
+[Visualizar portfólio](https://ogabrielfbc.github.io/Portifolio/)
+
+## Contato
+
+- GitHub: https://github.com/ogabrielfbc
+
+---
+
+Desenvolvido por Gabriel Batista.
+>>>>>>> origin/main
