@@ -3,7 +3,7 @@
   A senha abaixo fica visível no JavaScript do navegador.
   Não use este modelo como autenticação real de produção.
 */
-const SENHA_ADMIN = "troque-esta-senha";
+const SENHA_ADMIN = "biel2602";
 const CHAVE_MENSAGENS = "portfolio_gabriel_mensagens";
 const CHAVE_INICIALIZACAO = "portfolio_gabriel_dados_iniciais";
 
