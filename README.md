@@ -6,7 +6,7 @@ Este repositório contém meu portfólio pessoal, desenvolvido para apresentar m
 
 ## Sobre o projeto
 
-O portfólio foi desenvolvido com foco em apresentar minhas habilidades e projetos de forma organizada, moderna e responsiva.
+O portfólio foi desenvolvido para apresentar minhas habilidades e projetos de forma organizada, moderna e responsiva.
 
 ## Tecnologias utilizadas
 
@@ -19,10 +19,18 @@ O portfólio foi desenvolvido com foco em apresentar minhas habilidades e projet
 ## Projetos apresentados
 
 - **NEXUS TECH:** projeto de e-commerce.
-- **GymTracker:** projeto voltado ao acompanhamento de treinos.
+- **GymTracker:** projeto de acompanhamento de treinos.
 - **AtacaTudo:** sistema de gerenciamento de estoque.
 - **Sistema de Reservas:** aplicação para gerenciamento de reservas de laboratórios.
 
 ## Acesse meu portfólio
 
-[Visualizar portfólio](https://ogabrielfbc.github.io/Port
+[Visualizar portfólio](https://ogabrielfbc.github.io/Portifolio/)
+
+## Contato
+
+- GitHub: https://github.com/ogabrielfbc
+
+---
+
+Desenvolvido por Gabriel Batista.
