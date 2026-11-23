@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administração | Portfólio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-header">
+      <a href="index.html" class="brand">GB<span>.</span> <small>PAINEL</small></a>
+      <a href="index.html" class="back-link"><i class="bi bi-arrow-left"></i> Voltar ao portfólio</a>
+    </header>
+
+    <section id="telaLogin" class="login-card">
+      <div class="login-icon"><i class="bi bi-shield-lock"></i></div>
+      <p class="kicker">ÁREA RESTRITA</p>
+      <h1>Painel administrativo</h1>
+      <p class="muted">Entre para gerenciar as mensagens recebidas pelo formulário.</p>
+      <form id="formLogin">
+        <label for="senhaAdmin" class="form-label">Senha de acesso</label>
+        <input id="senhaAdmin" type="password" class="form-control" required autocomplete="current-password" placeholder="Digite a senha">
+        <button class="btn-admin w-100 mt-3" type="submit">Entrar <i class="bi bi-arrow-right"></i></button>
+        <p id="erroLogin" class="login-error" role="alert"></p>
+      </form>
+      <p class="security-note"><i class="bi bi-info-circle"></i> Demonstração acadêmica: a senha e os dados ficam no navegador. Não use este painel para informações reais ou sensíveis.</p>
+    </section>
+
+    <section id="painel" hidden>
+      <div class="dashboard-heading">
+        <div><p class="kicker">VISÃO GERAL</p><h1>Mensagens</h1><p class="muted">Gerencie os contatos enviados pelo portfólio.</p></div>
+        <button id="botaoSair" class="btn-logout"><i class="bi bi-box-arrow-right"></i> Sair</button>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card"><span>Total de mensagens</span><strong id="totalMensagens">0</strong><i class="bi bi-inbox"></i></article>
+        <article class="stat-card"><span>Novas</span><strong id="totalNovas">0</strong><i class="bi bi-envelope"></i></article>
+        <article class="stat-card"><span>De visitantes</span><strong id="totalReais">0</strong><i class="bi bi-person-check"></i></article>
+      </div>
+
+      <div class="messages-toolbar">
+        <div><h2>Caixa de entrada</h2><p class="muted small mb-0">Os registros são armazenados no LocalStorage deste navegador.</p></div>
+        <button id="botaoNova" class="btn-admin"><i class="bi bi-plus-lg"></i> Nova mensagem</button>
+      </div>
+
+      <div id="formularioRegistro" class="editor-card" hidden>
+        <h3 id="tituloEditor">Adicionar mensagem</h3>
+        <form id="formRegistro" class="row g-3">
+          <input type="hidden" id="registroId">
+          <div class="col-md-6"><label class="form-label" for="registroNome">Nome</label><input id="registroNome" class="form-control" maxlength="80" required></div>
+          <div class="col-md-6"><label class="form-label" for="registroEmail">E-mail</label><input id="registroEmail" type="email" class="form-control" maxlength="120" required></div>
+          <div class="col-12"><label class="form-label" for="registroAssunto">Assunto</label><input id="registroAssunto" class="form-control" maxlength="120" required></div>
+          <div class="col-12"><label class="form-label" for="registroMensagem">Mensagem</label><textarea id="registroMensagem" class="form-control" rows="3" maxlength="2000" required></textarea></div>
+          <div class="col-md-6"><label class="form-label" for="registroStatus">Status</label><select id="registroStatus" class="form-select"><option>Nova</option><option>Lida</option><option>Respondida</option></select></div>
+          <div class="col-12 d-flex gap-2"><button class="btn-admin" type="submit">Salvar</button><button class="btn-cancel" id="botaoCancelar" type="button">Cancelar</button></div>
+        </form>
+      </div>
+
+      <div class="filters">
+        <div class="search-box"><i class="bi bi-search"></i><input id="pesquisa" type="search" placeholder="Buscar por nome, e-mail ou assunto..."></div>
+        <select id="filtroStatus" class="form-select"><option value="">Todos os status</option><option>Nova</option><option>Lida</option><option>Respondida</option></select>
+        <select id="filtroOrigem" class="form-select"><option value="">Todas as mensagens</option><option value="real">Mensagens recebidas</option><option value="teste">Dados de demonstração</option></select>
+      </div>
+
+      <div id="listaMensagens" class="message-list"></div>
+      <p class="storage-warning"><i class="bi bi-exclamation-triangle"></i> Limitação importante: LocalStorage é específico do navegador e do dispositivo. Para receber mensagens de diferentes visitantes em um único painel público, será necessário um backend ou serviço de banco de dados.</p>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>
