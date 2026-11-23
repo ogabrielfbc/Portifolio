@@ -25,12 +25,4 @@ O portfólio foi desenvolvido com foco em apresentar minhas habilidades e projet
 
 ## Acesse meu portfólio
 
-[Visualizar portfólio](COLOQUE-AQUI-O-LINK-DO-SEU-PORTFOLIO)
-
-## Contato
-
-- GitHub: https://github.com/ogabrielfbc
-
----
-
-Desenvolvido por Gabriel Batista.
+[Visualizar portfólio](https://ogabrielfbc.github.io/Port
