@@ -10,20 +10,25 @@
 
     <title>Sistema de Reservas | Gabriel Batista</title>
 
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Ícones -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
+    <!-- CSS principal -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
+    <!-- MENU -->
     <nav class="navbar navbar-dark">
         <div class="container">
 
@@ -45,6 +50,7 @@
         <section class="section section-dark">
             <div class="container">
 
+                <!-- APRESENTAÇÃO -->
                 <p class="section-kicker">
                     PROJETO 04 / DESENVOLVIMENTO
                 </p>
@@ -61,7 +67,6 @@
 
 
                 <!-- GALERIA -->
-
                 <div class="galeria-projeto">
 
                     <h3>Galeria do projeto</h3>
@@ -70,7 +75,7 @@
 
                         <img
                             id="imagemPrincipal"
-                            src="../assets/img/Reservas-imagens/1.png"
+                            src="../assets/img/Reservas-imagens/1.PNG"
                             alt="Tela principal do Sistema de Reservas"
                             onclick="abrirImagem(0)"
                         >
@@ -81,19 +86,19 @@
                     <div class="miniaturas">
 
                         <img
-                            src="../assets/img/Reservas-imagens/1.png"
+                            src="../assets/img/Reservas-imagens/1.PNG"
                             alt="Imagem 1"
                             onclick="selecionarImagem(0)"
                         >
 
                         <img
-                            src="../assets/img/Reservas-imagens/2.png"
+                            src="../assets/img/Reservas-imagens/2.PNG"
                             alt="Imagem 2"
                             onclick="selecionarImagem(1)"
                         >
 
                         <img
-                            src="../assets/img/Reservas-imagens/3.png"
+                            src="../assets/img/Reservas-imagens/3.PNG"
                             alt="Imagem 3"
                             onclick="selecionarImagem(2)"
                         >
@@ -104,22 +109,41 @@
 
 
                 <!-- MODAL -->
+                <div
+                    id="modalGaleria"
+                    class="modal-galeria"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-label="Visualização das imagens do Sistema de Reservas"
+                >
 
-                <div id="modalGaleria" class="modal-galeria">
-
-                    <button class="fechar-modal" onclick="fecharImagem()">
+                    <button
+                        class="fechar-modal"
+                        onclick="fecharImagem()"
+                        aria-label="Fechar galeria"
+                    >
                         &times;
                     </button>
 
-                    <button class="navegar-modal anterior"
-                        onclick="mudarImagem(-1)">
+                    <button
+                        class="navegar-modal anterior"
+                        onclick="mudarImagem(-1)"
+                        aria-label="Imagem anterior"
+                    >
                         &#10094;
                     </button>
 
-                    <img id="imagemModal" src="" alt="Imagem ampliada do Sistema de Reservas">
+                    <img
+                        id="imagemModal"
+                        src=""
+                        alt="Imagem ampliada do Sistema de Reservas"
+                    >
 
-                    <button class="navegar-modal proxima"
-                        onclick="mudarImagem(1)">
+                    <button
+                        class="navegar-modal proxima"
+                        onclick="mudarImagem(1)"
+                        aria-label="Próxima imagem"
+                    >
                         &#10095;
                     </button>
 
@@ -127,7 +151,6 @@
 
 
                 <!-- SOBRE O PROJETO -->
-
                 <div class="project-content">
 
                     <h3>Sobre o projeto</h3>
@@ -176,6 +199,7 @@
     </main>
 
 
+    <!-- RODAPÉ -->
     <footer class="site-footer">
         <div class="container text-center">
             <p>
@@ -186,12 +210,13 @@
     </footer>
 
 
+    <!-- JAVASCRIPT DA GALERIA -->
     <script>
 
         const imagens = [
-            "../assets/img/Reservas-imagens/1.png",
-            "../assets/img/Reservas-imagens/2.png",
-            "../assets/img/Reservas-imagens/3.png"
+            "../assets/img/Reservas-imagens/1.PNG",
+            "../assets/img/Reservas-imagens/2.PNG",
+            "../assets/img/Reservas-imagens/3.PNG"
         ];
 
         let imagemAtual = 0;
@@ -202,6 +227,7 @@
         const miniaturas = document.querySelectorAll(".miniaturas img");
 
 
+        // Selecionar imagem
         function selecionarImagem(indice) {
 
             imagemAtual = indice;
@@ -209,12 +235,18 @@
             imagemPrincipal.src = imagens[indice];
 
             miniaturas.forEach((miniatura, i) => {
-                miniatura.classList.toggle("selecionada", i === indice);
+
+                miniatura.classList.toggle(
+                    "selecionada",
+                    i === indice
+                );
+
             });
 
         }
 
 
+        // Abrir imagem
         function abrirImagem(indice) {
 
             selecionarImagem(indice);
@@ -228,15 +260,14 @@
         }
 
 
+        // Fechar imagem
         function fecharImagem() {
-
-            modal.classList.remove("ativo");
-
+             modal.classList.remove("ativo");
             document.body.style.overflow = "";
-
         }
 
 
+        // Avançar e voltar imagens
         function mudarImagem(direcao) {
 
             imagemAtual += direcao;
@@ -256,6 +287,7 @@
         }
 
 
+        // Fechar clicando no fundo escuro
         modal.addEventListener("click", function(evento) {
 
             if (evento.target === modal) {
@@ -265,6 +297,7 @@
         });
 
 
+        // Controles pelo teclado
         document.addEventListener("keydown", function(evento) {
 
             if (!modal.classList.contains("ativo")) return;
@@ -284,8 +317,11 @@
         });
 
 
+        // Inicializar galeria
         selecionarImagem(0);
 
+
+        // Ano automático
         document.getElementById("anoAtual").textContent =
             new Date().getFullYear();
 

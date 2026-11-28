@@ -1365,3 +1365,17 @@ textarea.form-control {
         right: 5px;
     }
 }
+.miniaturas img {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: .2s;
+}
+
+.miniaturas img:hover {
+    opacity: 1;
+}
+
+.miniaturas img.selecionada {
+    opacity: 1;
+    border: 2px solid var(--destaque);
+}

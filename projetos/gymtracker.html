@@ -10,15 +10,19 @@
 
     <title>GymTracker | Gabriel Batista</title>
 
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Ícones -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
+    <!-- CSS principal -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -70,7 +74,7 @@
 
                         <img
                             id="imagemPrincipal"
-                            src="../assets/img/Gymtracker-imagens/1.png"
+                            src="../assets/img/Gymtracker-imagens/1.PNG"
                             alt="Imagem do projeto GymTracker"
                             onclick="abrirImagem()"
                         >
@@ -99,7 +103,7 @@
 
                     <img
                         id="imagemModal"
-                        src="../assets/img/Gymtracker-imagens/1.png"
+                        src="../assets/img/Gymtracker-imagens/1.PNG"
                         alt="Imagem ampliada do GymTracker"
                     >
 
@@ -169,13 +173,14 @@
     <!-- JAVASCRIPT -->
     <script>
 
-        const imagem = "../assets/img/Gymtracker-imagens/1.png";
+        const imagem = "../assets/img/Gymtracker-imagens/1.PNG";
 
         const modal = document.getElementById("modalGaleria");
 
         const imagemModal = document.getElementById("imagemModal");
 
 
+        // Abrir imagem
         function abrirImagem() {
 
             imagemModal.src = imagem;
@@ -187,6 +192,7 @@
         }
 
 
+        // Fechar imagem
         function fecharImagem() {
 
             modal.classList.remove("ativo");
@@ -196,6 +202,7 @@
         }
 
 
+        // Fechar clicando no fundo escuro
         modal.addEventListener("click", function(evento) {
 
             if (evento.target === modal) {
@@ -205,15 +212,17 @@
         });
 
 
+        // Fechar pelo teclado
         document.addEventListener("keydown", function(evento) {
 
-            if (evento.key === "Escape") {
+            if (evento.key === "Escape" && modal.classList.contains("ativo")) {
                 fecharImagem();
             }
 
         });
 
 
+        // Ano automático
         document.getElementById("anoAtual").textContent =
             new Date().getFullYear();
 
