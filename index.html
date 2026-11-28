@@ -1,0 +1,900 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfólio de Gabriel Batista — estudante de tecnologia e desenvolvimento.">
+    <meta name="theme-color" content="#080b14">
+
+    <title>Gabriel Batista | Portfólio</title>
+
+    <!-- (1. Arquivos e bibliotecas) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- (2. Menu de navegação) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#inicio">GB<span>.</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre mim</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-contato" href="#contato">
+                            Vamos conversar <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- (3. Página inicial) -->
+        <section id="inicio" class="hero section-anchor">
+
+            <div class="hero-grid"></div>
+
+            <div class="container position-relative">
+                <div class="row align-items-center min-vh-100 g-5 py-5">
+
+                    <div class="col-lg-7">
+
+                        <div class="status-pill">
+                            <span class="status-dot"></span>
+                            Estudante de tecnologia · Em constante evolução
+                        </div>
+
+                        <p class="eyebrow mt-4 mb-2">OLÁ, EU SOU</p>
+
+                        <h1>Gabriel<br><span>Batista.</span></h1>
+
+                        <h2 class="hero-subtitle">
+                            Transformando ideias em experiências digitais.
+                        </h2>
+
+                        <p class="hero-description">
+                            Sou estudante do Ensino Médio Técnico em Informática e tenho interesse em programação,
+                            desenvolvimento web e novas tecnologias. Gosto de aprender na prática e transformar
+                            conhecimentos em projetos.
+                        </p>
+
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a class="btn-primary-custom" href="#projetos">
+                                Conheça meus projetos <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                            <a class="btn-outline-custom" href="#sobre">
+                                Sobre mim
+                            </a>
+                        </div>
+
+                        <div class="social-links mt-5">
+                            <a href="https://github.com/ogabrielfbc/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/gabriel-francisco-439341365/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+
+                            <a href="#contato" aria-label="E-mail">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <div class="portrait-wrap">
+
+                            <div class="portrait-orbit orbit-one"></div>
+                            <div class="portrait-orbit orbit-two"></div>
+
+                            <div class="portrait-card">
+                                <img src="assets/img/perfil.jpg"
+                                    alt="Foto de Gabriel Batista"
+                                    onerror="this.style.display='none';this.nextElementSibling.hidden=false;">
+
+                                <div class="portrait-placeholder" hidden>
+                                    <i class="bi bi-person"></i>
+                                    <span>Adicione sua foto em<br>assets/img/perfil.jpg</span>
+                                </div>
+                            </div>
+
+                            <div class="floating-note">
+                                <span class="status-dot"></span>
+                                Criando, testando e aprendendo
+                            </div>
+
+                            <div class="floating-code">
+                                <i class="bi bi-code-slash"></i> &lt;developer /&gt;
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="scroll-hint">
+                    <span></span> ROLE PARA EXPLORAR
+                </div>
+            </div>
+        </section>
+
+
+        <!-- (4. Sobre mim) -->
+        <section id="sobre" class="section section-dark section-anchor">
+
+            <div class="container">
+
+                <div class="row g-5 align-items-start">
+
+                    <div class="col-lg-5">
+
+                        <p class="section-kicker">01 / SOBRE MIM</p>
+
+                        <h2 class="section-title">
+                            Tecnologia, curiosidade e vontade de criar.
+                        </h2>
+
+                        <p class="section-lead">
+                            Atualmente, curso o Ensino Médio Técnico em Informática no Senac.
+                            Durante minha formação, venho desenvolvendo conhecimentos em lógica de programação,
+                            desenvolvimento de sistemas e criação de interfaces.
+                        </p>
+
+                        <p class="muted-copy">
+                            Tenho interesse em desenvolvimento de software e aplicações web.
+                            Busco evoluir por meio dos estudos, de experiências práticas e de projetos pessoais
+                            que me desafiem a aprender algo novo.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-7">
+
+                        <div class="about-panel">
+
+                            <div class="about-row">
+                                <div class="about-icon"><i class="bi bi-mortarboard"></i></div>
+                                <div>
+                                    <h3>Formação</h3>
+                                    <p>Ensino Médio Técnico em Informática — Senac</p>
+                                </div>
+                            </div>
+
+                            <div class="about-row">
+                                <div class="about-icon"><i class="bi bi-code-slash"></i></div>
+                                <div>
+                                    <h3>Área de interesse</h3>
+                                    <p>Programação, desenvolvimento web e tecnologia</p>
+                                </div>
+                            </div>
+
+                            <div class="about-row">
+                                <div class="about-icon"><i class="bi bi-lightbulb"></i></div>
+                                <div>
+                                    <h3>Objetivo</h3>
+                                    <p>Aprender continuamente e desenvolver soluções digitais úteis.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-row">
+                                <div class="about-icon"><i class="bi bi-people"></i></div>
+                                <div>
+                                    <h3>Habilidades pessoais</h3>
+                                    <p>Criatividade, organização, comunicação e trabalho em equipe.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-block mt-5">
+
+                    <p class="section-kicker">FERRAMENTAS E LINGUAGENS</p>
+
+                    <div class="skill-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Git e GitHub</span>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- (5. Conhecimentos acadêmicos) -->
+        <section id="conhecimentos" class="section section-anchor">
+
+            <div class="container">
+
+                <p class="section-kicker">02 / FORMAÇÃO ACADÊMICA</p>
+
+                <h2 class="section-title">Conhecimento além do código.</h2>
+
+                <p class="section-lead mb-5">
+                    As áreas do Ensino Médio contribuem para desenvolver habilidades que também são importantes
+                    na programação e na resolução de problemas.
+                </p>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <article class="info-card h-100">
+                            <div class="card-icon"><i class="bi bi-globe-americas"></i></div>
+                            <span class="card-number">01</span>
+                            <h3>Ciências Humanas</h3>
+                            <p>
+                                História, Geografia, Filosofia e Sociologia ajudam a compreender a sociedade,
+                                analisar diferentes contextos e pensar em soluções tecnológicas que considerem
+                                as necessidades das pessoas.
+                            </p>
+                            <div class="connection">
+                                <strong>Conexão com TI</strong>
+                                <span>Entender o usuário e o impacto da tecnologia.</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="info-card h-100">
+                            <div class="card-icon"><i class="bi bi-activity"></i></div>
+                            <span class="card-number">02</span>
+                            <h3>Ciências da Natureza</h3>
+                            <p>
+                                Física, Química e Biologia estimulam a observação, a investigação e o pensamento
+                                científico. Essas habilidades ajudam a identificar problemas, formular hipóteses
+                                e testar soluções.
+                            </p>
+                            <div class="connection">
+                                <strong>Conexão com TI</strong>
+                                <span>Investigar erros e testar possibilidades.</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="info-card h-100">
+                            <div class="card-icon"><i class="bi bi-calculator"></i></div>
+                            <span class="card-number">03</span>
+                            <h3>Matemática</h3>
+                            <p>
+                                A Matemática contribui para o raciocínio lógico, a interpretação de dados e a
+                                resolução de problemas, competências utilizadas na construção de algoritmos
+                                e na organização de informações.
+                            </p>
+                            <div class="connection">
+                                <strong>Conexão com TI</strong>
+                                <span>Desenvolver lógica e organizar processos.</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="info-card h-100">
+                            <div class="card-icon"><i class="bi bi-translate"></i></div>
+                            <span class="card-number">04</span>
+                            <h3>Linguagens</h3>
+                            <p>
+                                Português, Inglês e Artes desenvolvem comunicação, interpretação e criatividade.
+                                O inglês também facilita o acesso a documentações, ferramentas e comunidades
+                                de tecnologia.
+                            </p>
+                            <div class="connection">
+                                <strong>Conexão com TI</strong>
+                                <span>Comunicar ideias e consultar documentação.</span>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- (6. Tecnologias e tendências) -->
+        <section id="tecnologias" class="section section-dark section-anchor">
+
+            <div class="container">
+
+                <p class="section-kicker">03 / TENDÊNCIAS TECNOLÓGICAS</p>
+
+                <h2 class="section-title">Tecnologias que estão moldando o futuro.</h2>
+
+                <p class="section-lead mb-5">
+                    Quatro áreas que influenciam a maneira como empresas, sistemas e pessoas interagem
+                    com o mundo digital.
+                </p>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <article class="trend-card h-100">
+                            <div class="trend-top">
+                                <div class="card-icon"><i class="bi bi-shield-lock"></i></div>
+                                <span>01</span>
+                            </div>
+                            <h3>Cybersecurity</h3>
+                            <p>
+                                Cybersecurity, ou segurança cibernética, reúne práticas e tecnologias usadas
+                                para proteger dispositivos, redes, sistemas e dados contra acessos não
+                                autorizados, ataques e vazamentos.
+                            </p>
+                            <div class="trend-tag">Proteção de dados e sistemas</div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="trend-card h-100">
+                            <div class="trend-top">
+                                <div class="card-icon"><i class="bi bi-link-45deg"></i></div>
+                                <span>02</span>
+                            </div>
+                            <h3>Blockchain</h3>
+                            <p>
+                                Blockchain é uma tecnologia de registro distribuído que organiza informações
+                                em blocos conectados. Ela permite manter registros compartilhados e verificáveis,
+                                sendo usada em diferentes aplicações além das criptomoedas.
+                            </p>
+                            <div class="trend-tag">Registros distribuídos</div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="trend-card h-100">
+                            <div class="trend-top">
+                                <div class="card-icon"><i class="bi bi-robot"></i></div>
+                                <span>03</span>
+                            </div>
+                            <h3>Automação</h3>
+                            <p>
+                                Automação utiliza sistemas para executar tarefas com pouca intervenção humana.
+                                A robótica combina componentes mecânicos, eletrônicos e programação para criar
+                                máquinas capazes de realizar atividades.
+                            </p>
+                            <div class="trend-tag">Eficiência e execução de tarefas</div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="trend-card h-100">
+                            <div class="trend-top">
+                                <div class="card-icon"><i class="bi bi-hdd-network"></i></div>
+                                <span>04</span>
+                            </div>
+                            <h3>Edge Computing</h3>
+                            <p>
+                                Edge Computing, ou computação de borda, processa dados perto de onde são
+                                produzidos, em vez de enviar tudo para um servidor distante. Isso pode reduzir
+                                atrasos e melhorar respostas em tempo real.
+                            </p>
+                            <div class="trend-tag">Processamento próximo dos dispositivos</div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- (7. Projetos desenvolvidos) -->
+        <section id="projetos" class="section section-anchor">
+
+            <div class="container">
+
+                <p class="section-kicker">04 / PORTFÓLIO</p>
+
+                <h2 class="section-title">Projetos desenvolvidos.</h2>
+
+                <p class="section-lead mb-5">
+                    Projetos que representam minha evolução, experiências e conhecimentos em tecnologia.
+                </p>
+
+                <div class="row g-4">
+
+                    <!-- (7.1 NEXUS TECH) -->
+                    <div class="col-lg-6">
+                        <article class="project-card h-100">
+                            <div class="project-status concluido">
+                            <span></span>
+                             Concluído
+                            </div>
+                            <div class="project-gallery">
+                                <img src="assets/img/nexus-imagens/1.PNG"
+                                alt="Captura de tela do projeto NEXUSTECH">
+                            </div>
+
+                            <div class="project-content">
+
+                                <div class="project-meta">
+                                    <span>DESENVOLVIMENTO WEB</span>
+                                    <span>PHP · MySQL</span>
+                                </div>
+
+                                <h3>NEXUS TECH</h3>
+
+                                <p>
+                                    Loja virtual desenvolvida com PHP e MySQL, com cadastro de usuários,
+                                    catálogo de produtos, carrinho de compras e sistema de NEXUS Coins.
+                                </p>
+
+                                <div class="project-actions">
+                                    <a href="projetos/nexus.html" class="text-link">
+                                        Ver projeto <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                    <span class="project-status">Projeto pessoal</span>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- (7.2 GYMTRACKER) -->
+                    <div class="col-lg-6">
+                        <article class="project-card h-100">
+
+                            <div class="project-gallery">
+                                <div class="project-status desenvolvimento">
+                                <span></span>
+                                 Em desenvolvimento
+                                </div>
+                                <img src="assets/img/Gymtracker-imagens/1.PNG"
+                                    alt="Captura de tela do projeto GymTracker">
+                            </div>
+
+                            <div class="project-content">
+
+                                <div class="project-meta">
+                                    <span>PROGRAMAÇÃO</span>
+                                    <span>PYTHON</span>
+                                </div>
+
+                                <h3>GymTracker</h3>
+
+                                <p>
+                                    Projeto de programação voltado à organização e ao acompanhamento
+                                    de atividades relacionadas a treinos.
+                                </p>
+
+                                <div class="project-actions">
+                                    <a href="projetos/gymtracker.html" class="text-link">
+                                        Ver projeto <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                    <span class="project-status">Projeto de estudo</span>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- (7.3 ATACATUDO) -->
+                    <div class="col-lg-6">
+                        <article class="project-card h-100">
+
+                            <div class="project-gallery">
+                                <div class="project-status concluido">
+                            <span></span>
+                             Concluído
+                            </div>
+                                <img src="assets/img/Atacatudo-imagens/2.png"
+                                    alt="Captura de tela do sistema AtacaTudo">
+                            </div>
+
+                            <div class="project-content">
+
+                                <div class="project-meta">
+                                    <span>DESENVOLVIMENTO DE SISTEMAS</span>
+                                    <span>JAVA</span>
+                                </div>
+
+                                <h3>AtacaTudo</h3>
+
+                                <p>
+                                    Sistema desenvolvido em Java com interface gráfica, incluindo
+                                    funcionalidades de login, cadastro e gerenciamento.
+                                </p>
+
+                                <div class="project-actions">
+                                    <a href="projetos/atacatudo.html" class="text-link">
+                                        Ver projeto <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                    <span class="project-status">Projeto de estudo</span>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- (7.4 SISTEMA DE RESERVAS) -->
+                    <div class="col-lg-6">
+                        <article class="project-card h-100">
+                            <div class="project-status concluido">
+                            <span></span>
+                             Concluído
+                            </div>
+
+                            <div class="project-gallery reserva-gallery">
+                                <img src="assets/img/Reservas-imagens/1.png"
+                                    alt="Captura de tela do sistema de reservas">
+                            </div>
+
+                            <div class="project-content">
+
+                                <div class="project-meta">
+                                    <span>DESENVOLVIMENTO DE SISTEMAS</span>
+                                    <span>PYTHON · STREAMLIT · MYSQL</span>
+                                </div>
+
+                                <h3>Sistema de Reservas</h3>
+
+                                <p>
+                                    Aplicação para gerenciamento de reservas de laboratórios,
+                                    com seleção de horários e verificação de conflitos.
+                                </p>
+
+                                <div class="project-actions">
+                                    <a href="projetos/reservas.html" class="text-link">
+                                        Ver projeto <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                    <span class="project-status">Projeto de estudo</span>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- (7.5 ATIVIDADES DE APRENDIZADO) -->
+                    <div class="col-lg-6">
+                        <article class="project-card h-100">
+                            <div class="project-status aprendizado">
+                            <span></span>
+                            Em andamento
+                            </div>
+
+                            <div class="project-content">
+
+                                <div class="project-meta">
+                                    <span>ESTUDOS E PRÁTICA</span>
+                                    <span>HTML · CSS · JAVA · PYTHON</span>
+                                </div>
+
+                                <h3>Atividades de Aprendizado</h3>
+
+                                <p>
+                                    Repositório com atividades, exercícios e projetos
+                                    desenvolvidos durante minha formação em tecnologia,
+                                    registrando minha evolução nos estudos.
+                                </p>
+
+                                <div class="project-actions">
+                                    <a href="projetos/aprendizado.html" class="text-link">
+                                        Ver atividades <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                    <span class="project-status">Estudos e exercícios</span>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- (8. Cursos e certificações) -->
+        <section id="cursos" class="section section-dark section-anchor">
+
+            <div class="container">
+
+                <div class="section-heading text-center">
+
+                    <span class="section-tag">FORMAÇÃO COMPLEMENTAR</span>
+
+                    <h2>Cursos e <span>Certificações</span></h2>
+
+                    <p>
+                        Conhecimentos que desenvolvi por meio de cursos
+                        e experiências de aprendizado.
+                    </p>
+
+                </div>
+
+                <div class="row g-4 mt-3">
+
+                    <!-- (8.1 CURSO DE PYTHON) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <span class="course-category">PROGRAMAÇÃO</span>
+                            <h3>Fundamentos do Python 1</h3>
+                            <p>Cisco Networking Academy</p>
+                            <span>Concluído em setembro de 2026</span>
+                        </div>
+                    </div>
+                     <!-- (8.2 CURSO DE JAVASCRIPT) -->
+                    <div class="col-md-6 col-lg-4">
+                    
+                        <div class="course-card">
+                        <span class="course-category">PROGRAMAÇÃO</span>
+                        <h3>JavaScript Essentials 1</h3>
+                        <p>Cisco Networking Academy</p>
+                        <span>Concluído em novembro de 2026</span>
+                        </div>
+                    </div>
+                    
+
+
+                    <!-- (8.2 INTELIGÊNCIA ARTIFICIAL) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <span class="course-category">INTELIGÊNCIA ARTIFICIAL</span>
+                            <h3>Introdução à IA moderna</h3>
+                            <p>Cisco Networking Academy</p>
+                            <span>Concluído em junho de 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- (8.3 CIBERSEGURANÇA) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <span class="course-category">SEGURANÇA</span>
+                            <h3>Introdução à Cibersegurança</h3>
+                            <p>Cisco Networking Academy</p>
+                            <span>Concluído em março de 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- (8.4 AMEAÇAS CIBERNÉTICAS) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <span class="course-category">SEGURANÇA</span>
+                            <h3>Gerenciamento de Ameaças Cibernéticas</h3>
+                            <p>Cisco Networking Academy</p>
+                            <span>Concluído em setembro de 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- (8.5 CONSCIENTIZAÇÃO DIGITAL) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <span class="course-category">SEGURANÇA DIGITAL</span>
+                            <h3>Conscientização digital</h3>
+                            <p>Cisco Networking Academy</p>
+                            <span>Concluído em agosto de 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- (8.6 CONCEITOS DE REDES) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <span class="course-category">REDES</span>
+                            <h3>Conceitos básicos de rede</h3>
+                            <p>Cisco Networking Academy</p>
+                            <span>Concluído em junho de 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- (8.7 DEFESA DE REDE) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <span class="course-category">REDES E SEGURANÇA</span>
+                            <h3>Defesa de rede</h3>
+                            <p>Cisco Networking Academy</p>
+                            <span>Concluído em abril de 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- (8.8 CURSO DE DESENHO) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <span class="course-category">ARTE E CRIATIVIDADE</span>
+                            <h3>Curso de Desenho</h3>
+                            <p>NAB Escola de Desenho</p>
+                            <span>2018 – 2022</span>
+                            <p class="mt-3">Cartoon, Caricatura, Realismo e Mangá.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- (9. Contato) -->
+        <section id="contato" class="section section-dark section-anchor">
+
+            <div class="container">
+
+                <div class="row g-5">
+
+                    <div class="col-lg-5">
+
+                        <p class="section-kicker">05 / CONTATO</p>
+
+                        <h2 class="section-title">Vamos conversar?</h2>
+
+                        <p class="section-lead">
+                            Tem uma oportunidade, uma ideia ou quer trocar conhecimentos?
+                            Envie uma mensagem pelo formulário.
+                        </p>
+
+                        <div class="contact-detail">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <span>E-mail</span>
+                                <strong>bielerafael013@gmail.com</strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <span>Localização</span>
+                                <strong>São Paulo, Brasil</strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="bi bi-github"></i>
+                            <div>
+                                <span>GitHub</span>
+                                <strong>ogabrielfbc</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- (9.1 FORMULÁRIO DE CONTATO) -->
+                    <div class="col-lg-7">
+
+                        <form id="formContato" class="contact-form">
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input id="nome" name="nome" class="form-control"
+                                        maxlength="80" required placeholder="Seu nome">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input id="email" name="email" type="email"
+                                        class="form-control" maxlength="120"
+                                        required placeholder="voce@email.com">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="assunto" class="form-label">Assunto</label>
+                                    <input id="assunto" name="assunto" class="form-control"
+                                        maxlength="120" required
+                                        placeholder="Sobre o que gostaria de conversar?">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="mensagem" class="form-label">Mensagem</label>
+                                    <textarea id="mensagem" name="mensagem"
+                                        class="form-control" rows="5" maxlength="2000"
+                                        required placeholder="Escreva sua mensagem..."></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn-primary-custom w-100 border-0"
+                                        type="submit" id="botaoEnviar">
+                                        Enviar mensagem <i class="bi bi-send"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-12">
+                                    <p id="statusFormulario" class="form-status"
+                                        role="status" aria-live="polite"></p>
+                                </div>
+
+                            </div>
+
+                            <p class="form-note">
+                                <i class="bi bi-lock"></i>
+                                Seus dados serão usados apenas para responder ao contato.
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- (10. Rodapé) -->
+    <footer class="site-footer">
+
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+
+            <a class="navbar-brand" href="#inicio">GB<span>.</span></a>
+
+            <p>
+                © <span id="anoAtual"></span> Gabriel Batista. Desenvolvido com dedicação.
+            </p>
+
+            <a href="#inicio" class="back-top">
+                Voltar ao topo <i class="bi bi-arrow-up"></i>
+            </a>
+
+        </div>
+    </footer>
+
+
+    <!-- (11. Scripts) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
